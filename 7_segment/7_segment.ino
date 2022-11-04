@@ -20,6 +20,58 @@ void setup()
   pinMode(segDP, OUTPUT);
 }
 
+// ANIMATION
+void animation()
+{
+  digitalWrite(segDP, HIGH);
+  delay(150);
+  digitalWrite(segDP, LOW);
+  delay(150);
+  digitalWrite(segDP, HIGH);
+  delay(150);
+  digitalWrite(segDP, LOW);
+  delay(150);
+
+  digitalWrite(segD, HIGH);
+  delay(150);
+  digitalWrite(segD, LOW);
+  delay(150);
+  digitalWrite(segE, HIGH);
+  delay(150);
+  digitalWrite(segE, LOW);
+  delay(150);
+  digitalWrite(segF, HIGH);
+  delay(150);
+  digitalWrite(segF, LOW);
+  delay(150);
+  digitalWrite(segA, HIGH);
+  delay(150);
+  digitalWrite(segA, LOW);
+  delay(150);
+  digitalWrite(segB, HIGH);
+  delay(150);
+  digitalWrite(segB, LOW);
+  delay(150);
+  digitalWrite(segC, HIGH);
+  delay(150);
+  digitalWrite(segC, LOW);
+  delay(150);
+}
+
+// BLANK
+void blank()
+{
+  digitalWrite(segA, LOW);
+  digitalWrite(segB, LOW);
+  digitalWrite(segC, LOW);
+  digitalWrite(segD, LOW);
+  digitalWrite(segE, LOW);
+  digitalWrite(segF, LOW);
+  digitalWrite(segG, LOW);
+  digitalWrite(segDP, LOW);
+}
+
+// NUMBERS
 void Num0()
 {
   // 0
@@ -144,10 +196,11 @@ void Num9()
 
 void loop()
 {
-  //triger
-
   digitalWrite(LED_BUILTIN, LOW);
-  
+
+  animation();
+
+  delay(1000);
   Num0();
   delay(1000);
   Num1();
@@ -168,4 +221,6 @@ void loop()
   delay(1000);
   Num9();
   delay(1000);
+  
+  blank();
 }
