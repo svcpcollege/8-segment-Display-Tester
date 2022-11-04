@@ -146,7 +146,8 @@ void loop()
 {
   //triger
 
-  digitalWrite(13, LOW);
+  digitalWrite(LED_BUILTIN, LOW);
+  
   Num0();
   delay(1000);
   Num1();
