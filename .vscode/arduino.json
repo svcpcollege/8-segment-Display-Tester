@@ -1,5 +1,5 @@
 {
-    "sketch": "7_segment/7_segment.ino",
+    "sketch": "8_segment/8_segment.ino",
     "board": "arduino:avr:uno",
     "programmer": "arduino:avrispmkii",
     "port": "/dev/tty.usbmodem1422201"
